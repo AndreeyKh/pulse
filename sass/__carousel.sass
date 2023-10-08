@@ -1,0 +1,77 @@
+.carousel
+	padding: 81px 0 82px 0
+	&__inner
+		position: relative
+		max-width: 750px
+		margin: 0 auto
+	.slick-prev, .slick-next
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		left: -66px
+		border: none
+		background: #fff
+		img
+			width: 31px
+			height: 50px
+	.slick-next
+		left: auto
+		right: -66px
+
+.my-dots
+	position: absolute
+	bottom: -45px
+	display: block
+	width: 100%
+	padding: 0
+	list-style: none
+	text-align: center
+	li
+		position: relative
+		display: inline-block
+		width: 20px
+		height: 20px
+		margin: 0 5px
+		padding: 0
+		cursor: pointer
+	li button
+		font-size: 0
+		line-height: 0
+		display: block
+		width: 20px
+		height: 20px
+		padding: 5px
+		cursor: pointer
+		color: transparent
+		border: 0
+		outline: none
+		background: transparent
+
+.my-dots li button:hover,
+.my-dots li button:focus
+	outline: none
+
+.my-dots li button:hover:before,
+.my-dots li button:focus:before
+	opacity: 1
+
+.my-dots li button:before
+	font-family: 'slick'
+	font-size: 6px
+	line-height: 20px
+	position: absolute
+	top: 0
+	left: 0
+	width: 20px
+	height: 20px
+	content: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Rule_Segment_-_Circle_open_-_20px.svg')
+	text-align: center
+	opacity: .25
+	color: black
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.my-dots li.slick-active button:before
+	opacity: .75
+	color: black
+			

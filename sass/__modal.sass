@@ -1,0 +1,52 @@
+.overlay
+	content: ''
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background: rgba(0, 0, 0, 0.6)
+	z-index: 9999
+
+.modal
+	position: fixed
+	width: 382px
+	min-height: 402px
+	background: rgba(242, 242, 242, 1)
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	padding: 35px 23px 40px 28px
+	z-index: 99999
+	&__close
+		position: absolute
+		top: 0
+		right: -45px
+		font-size: 40px
+		color: #C70101
+		line-height: 40px
+		cursor: pointer
+	&__title
+		font-weight: 700
+		font-size: 19px
+		text-align: center
+		color: #0c0c0c
+	&__descr
+		font-weight: 500
+		font-size: 14px
+		text-align: center
+		color: #0c0c0c
+	&_mini
+		width: 382px
+		height: 143px
+	.error
+		border: 1px solid red
+		text-align: center
+		margin-bottom: 15px
+	label.error
+		border: none
+	
+#consultation, #thanks, #buy, .overlay
+	display: none
+
+
